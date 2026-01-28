@@ -309,7 +309,7 @@
         function updateTimerUI() {
             const bar = document.getElementById('timer-bar');
             const text = document.getElementById('countdown-text');
-            const percentage = (state.timeLeft / 10) * 100;
+            const percentage = (state.timeLeft / 30) * 100;
             
             bar.style.width = percentage + '%';
             text.innerText = state.timeLeft + 's';
@@ -454,4 +454,5 @@
         window.onload = init;
     </script>
 </body>
+
 </html>
