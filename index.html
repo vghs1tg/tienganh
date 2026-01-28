@@ -288,14 +288,14 @@
 
         function startTimer() {
             clearInterval(state.timerId);
-            state.timeLeft = 10;
+            state.timeLeft = 30;
             updateTimerUI();
             
             state.timerId = setInterval(() => {
                 state.timeLeft--;
                 updateTimerUI();
 
-                if (state.timeLeft <= 3 && state.timeLeft > 0) {
+                if (state.timeLeft <= 5 && state.timeLeft > 0) {
                     sfx.tick.play();
                 }
 
@@ -456,3 +456,4 @@
 </body>
 
 </html>
+
